@@ -9,6 +9,7 @@ import productRoutes from './routes/productRoutes'
 import orderRoutes from './routes/orderRoutes'
 
 
+
 const app = express()
 const port = process.env.PORT || 8080
 
@@ -19,6 +20,7 @@ app.use(express.json())
 
 //route to handle auth requests
 app.use("/api/v1/auth", authRoutes)
+
 app.use("/api/v1/category", categoryRoutes)
 app.use("/api/v1/product", productRoutes)
 app.use("/api/v1/order", orderRoutes)

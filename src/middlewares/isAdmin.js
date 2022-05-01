@@ -8,7 +8,10 @@ const isAdmin = (req, res, next) => {
         console.log(decodedToken)
         const { role } = decodedToken
 
-        if (role == 1) next()
+        if (role == 1) 
+        
+        next()
+
         else return res.json({
             message: "ACCESS DENIED"
         })

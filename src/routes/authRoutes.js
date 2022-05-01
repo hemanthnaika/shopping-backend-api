@@ -51,6 +51,7 @@ router.post('/signup',
             await user.save()
 
             res.json({ user })
+
         } catch (error) {
             console.log(error.message)
             res.status(500).json({ users: {} })
