@@ -4,9 +4,9 @@
     "description": "API server for our ecommerce application",
     "main": "server.js",
     "scripts": {
-        "dev": "nodemon  --exec ./node_modules/.bin/babel-node src/",
+        "start": "nodemon  --exec ./node_modules/.bin/babel-node src/server.js",
         "build": "babel src --out-dir dist",
-        "start": "npm install && npm run build && node dist/index.js"
+        "serve": "node dist/server.js"
 
     },
     "repository": {
