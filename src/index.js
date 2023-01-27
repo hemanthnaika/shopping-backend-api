@@ -26,7 +26,7 @@ app.use("/api/v1/product", productRoutes)
 app.use("/api/v1/order", orderRoutes)
 
 app.get('/', (req, res) => {
-    res.send(`Server running at ${port} hi Iam hemanth`)
+    res.send(`Server running at ${port} `)
 })
 
 app.listen(port, (req, res) => {
