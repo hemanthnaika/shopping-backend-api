@@ -6,7 +6,7 @@
     "scripts": {
         "dev": "nodemon  --exec ./node_modules/.bin/babel-node src/",
         "build": "babel src --out-dir dist",
-        "start": "npm install && npm run build && node dist/index.js"
+        "start": "npm install && npm install -g @babel/cli && npm install -g @babel/core && npm run build && node dist/index.js"
 
     },
     "repository": {
