@@ -2,11 +2,11 @@
     "name": "ecommerce-backend",
     "version": "1.0.0",
     "description": "API server for our ecommerce application",
-    "main": "server.js",
+    "main": "index.js",
     "scripts": {
-        "start": "nodemon  --exec babel-node src/server.js",
-        "build": "rm -rf dist && babel src -d dist && npm install && npm run build",
-        "serve": "node dist/server.js"
+        "dev": "nodemon  --exec ./node_modules/.bin/babel-node src/",
+        "build": "babel src --out-dir dist",
+        "start": "npm install && npm run build && node dist/index.js"
 
     },
     "repository": {
